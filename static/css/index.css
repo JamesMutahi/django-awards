@@ -1,0 +1,21 @@
+.featured-project{
+  margin-top: -3.2%;
+}
+
+.featured-text{
+	font-weight: 600;
+	font-size: 19px;
+}
+
+.date-font{
+	font-weight: 100;
+	font-size: 20px;
+}
+
+.share-icon{
+	color: white;
+}
+
+.share-icon:hover{
+	color: #0FB4B9;
+}

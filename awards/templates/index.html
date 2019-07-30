@@ -1,15 +1,19 @@
 {% extends 'layout.html' %}
 {% block content %}
 
-<section>
-<div class="card bg-dark text-white" style="height: 30%">
-  <img src="https://images.pexels.com/photos/1269968/pexels-photo-1269968.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" class="card-img img-fluid" alt="...">
-  <div class="card-img-overlay">
-    <h5 class="card-title">Card title</h5>
-    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-    <p class="card-text">Last updated 3 mins ago</p>
-  </div>
+<div class="card bg-dark text-white featured-project border-0">
+	<img src="https://images.pexels.com/photos/326311/pexels-photo-326311.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+	     class="card-img border-0" alt="..." height="450px" width="100%">
+	<div class="card-img-overlay mt-5 ml-5">
+		<div class="card-title"><span class="featured-text mr-3">Site of the day</span><span
+						class="date-font">July 31, 2019</span></div>
+		<div class=""><i class="material-icons p-2 border rounded-circle share-icon">share</i></div>
+		<div>
+			<button type="button" class="btn btn-lg btn-outline-info">Info</button>
+			<button type="button" class="btn btn-lg btn-outline-secondary ">Secondary</button>
+		</div>
+	</div>
 </div>
-</section>
+
 
 {% endblock %}
