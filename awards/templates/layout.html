@@ -18,9 +18,10 @@
 	{% bootstrap_css %}
 	{% endblock %}
 
-	<link rel="stylesheet" href="/static/css/bigUp.css">
+	<link rel="stylesheet" href="/static/css/sidebar.css">
 	<link rel="stylesheet" href="/static/css/styles.css">
 	<link rel="stylesheet" href="/static/css/animate.css">
+	<link rel="stylesheet" href="/static/css/index.css">
 	<script src="https://unpkg.com/feather-icons"></script>
 </head>
 
@@ -31,10 +32,16 @@
 {% include "navbar.html" %}
 <!--	end of navbar-->
 
+<div id="main">
+
 
 <!--	block content -->
 {% block content %} {%endblock%}
 <!--	end of block content-->
+
+
+</div>
+
 
 
 {% block scripts %}
