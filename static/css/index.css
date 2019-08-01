@@ -1,5 +1,6 @@
 .featured-project{
   margin-top: -3.2%;
+  cursor: pointer;
 }
 
 .featured-text{
@@ -19,3 +20,4 @@
 .share-icon:hover{
 	color: #0FB4B9;
 }
+
