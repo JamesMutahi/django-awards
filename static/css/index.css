@@ -21,3 +21,19 @@
 	color: #0FB4B9;
 }
 
+#imgcontainer{
+transition: 1s;
+opacity: 0.92;
+}
+
+#imgcontainer:hover
+{
+opacity:1;
+background-color: Black;
+z-index:10;
+transition: 1s;
+}
+#imgcontainer img
+{
+      Z-index: 5;
+}
