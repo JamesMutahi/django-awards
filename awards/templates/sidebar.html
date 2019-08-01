@@ -1,0 +1,40 @@
+<!--sidenav-->
+<div id="mySidenav" class="sidenav">
+	<a href="javascript:void(0)" class="closebtn px-4" onclick="closeNav()">&times;</a>
+	{% if user.is_authenticated %}
+	<a href="{% url 'index' %}" class="pl-5 p-4 border-bottom border-top mt-2">Home</a>
+	<a href="#" class="pl-5 p-4 border-bottom">Projects</a>
+	<a href="#" class="pl-5 p-4 border-bottom">Subscribe</a>
+	<a href="#" class="pl-5 p-4 border-bottom">Contact</a>
+	<p class="mt-5 text-center border pt-3 pb-3">
+		<a class="nav-link p-0 m-2" href="https://www.facebook.com/james.mutahi.39"
+		   style="display: inline; background: transparent;"><i class="feather-16"
+		                                                        data-feather="facebook"></i></a>
+		<a class="nav-link p-0 m-2" href="https://www.instagram.com/james_mutahi/"
+		   style="display: inline; background: transparent;"><i class="feather-16"
+		                                                        data-feather="instagram"></i></a>
+		<a class="nav-link p-0 m-2" href="https://twitter.com/Jamoh007" style="display: inline; background: transparent;"><i
+						class="feather-16"
+						data-feather="twitter"></i></a>
+		<a class="nav-link p-0 m-2" href="https://www.linkedin.com/in/james-mutahi-a651b9147/"
+		   style="display: inline; background: transparent;"><i class="feather-16"
+		                                                        data-feather="linkedin"></i></a>
+	</p>
+	{% else %}
+	<a href="#" class="pl-5 p-4 border-top border-bottom mt-2">Login</a>
+	<a href="#" class="pl-5 p-4 border-bottom">Home</a>
+	<a href="#" class="pl-5 p-4 border-bottom">Projects</a>
+	<a href="#" class="pl-5 p-4 border-bottom">Subscribe</a>
+	<a href="#" class="pl-5 p-4 border-bottom">Contact</a>
+	<p class="mt-5 text-center border-bottom border-top pt-3 pb-3">
+		<a class="nav-link p-0 m-2" href="https://www.facebook.com/james.mutahi.39"
+		   style="display: inline; background: transparent;"><i class="feather-16" data-feather="facebook"></i></a>
+		<a class="nav-link p-0 m-2" href="https://www.instagram.com/james_mutahi/"
+		   style="display: inline; background: transparent;"><i class="feather-16" data-feather="instagram"></i></a>
+		<a class="nav-link p-0 m-2" href="https://twitter.com/Jamoh007" style="display: inline; background: transparent;"><i
+						class="feather-16" data-feather="twitter"></i></a>
+		<a class="nav-link p-0 m-2" href="https://www.linkedin.com/in/james-mutahi-a651b9147/"
+		   style="display: inline; background: transparent;"><i class="feather-16" data-feather="twitter"></i></a>
+	</p>
+	{% endif %}
+</div>
