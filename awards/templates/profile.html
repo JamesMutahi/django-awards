@@ -1,6 +1,22 @@
 {% extends 'layout.html' %}
 {% block content %}
 
-
-
+<div class="container">
+	<div class="profile-layout text-center">
+		<div>
+			<img src="{{ user.profile.image.url }}" class="rounded-circle border responsive" alt="..." height="120"
+			     width="120">
+		</div>
+		<h1 class="text-uppercase mt-3 font-weight-bold">{{ user.profile.user }}</h1>
+		<div>
+			<h6 class="font-weight-bold mt-3">{{ user.profile.bio }}</h6>
+		</div>
+		<div>
+			<a href="{%  url 'edit' %}" style="text-decoration: none;">
+				<button class="btn mx-3 mt-3">Edit Profile</button>
+			</a>
+		</div>
+		<span class="text-muted">Last modified: {{ user.profile.updated_at }}</span>
+	</div>
+</div>
 {% endblock %}
