@@ -1,3 +1,15 @@
+$(document).ready(function() {
+//Preloader
+$(window).on("load", function() {
+let preloaderFadeOutTime = 1000;
+function hidePreloader() {
+var preloader = $('.spinner-wrapper');
+preloader.fadeOut(preloaderFadeOutTime);
+}
+hidePreloader();
+});
+});
+
 /* Set the width of the side navigation to 250px and the left margin of the page content to 250px and add a black background color to body */
 function openNav() {
   document.getElementById("mySidenav").style.width = "250px";
