@@ -1,10 +1,11 @@
 # Instagram Clone
-#### An application that mimics the image sharing network, Instagram, 26/07/2019
+#### This is a Django Web Application where you can post and/or view different projects and rate them according to design,usability and content, 26/07/2019
 
 
 ## Description
-This is a clone of the image sharing network, Instagram. Users can sign up login, view and post photos and follow other users.#### Link to deployed site
-https://jamesmutahiinstagram.herokuapp.com/
+This is a Django Web Application where you can post and/or view different projects and rate them according to design,usability and content.
+#### Link to deployed site
+https://jamesmutahiawards.herokuapp.com/
 
 ## Table of content
 1. [Description](#description)
@@ -59,7 +60,7 @@ Give an example
 
 #### Clone the Repo and rename it to suit your needs.
 ```bash
-git clone https://github.com/JamesMutahi/instagram-clone.git
+git clone https://github.com/JamesMutahi/django-awards.git
 ```
 #### Initialize git and add the remote repository
 ```bash
@@ -83,7 +84,7 @@ Create a `.env` file and paste paste the following filling where appropriate:
 ```
 SECRET_KEY='rdtfyguihjohucbdsjnc'
 DEBUG=True
-DB_NAME='instagram'
+DB_NAME='awards'
 DB_USER='<your database name>'
 DB_PASSWORD='<password to your database>'
 DB_HOST='127.0.0.1'
