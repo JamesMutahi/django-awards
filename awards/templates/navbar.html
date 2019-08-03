@@ -28,22 +28,25 @@ example 3 - Navbar with brand left, links on center and right that collapse into
 
 			{% if user.is_authenticated %}
 			<li class="nav-item">
-				<a class="nav-link nav-font text-dark font-weight-bold py-3 my-3 text-uppercase" href="{% url 'profile' %}">{{ user.username }}</a>
+				<a class="nav-link nav-font text-dark font-weight-bold py-3 my-3 text-uppercase" href="{% url 'profile' %}">{{ user.profile.user }}</a>
 			</li>
 
 			<li class="nav-item">
 				<div class="dropdown my-2">
 					<button class="dropbtn d-flex">
-						<span class="ml-2"><img src="{{ user.profile.image.url }}" class="rounded-circle border responsive" alt="..." height="50" width="50"></span>
+						<span class="ml-2"><img src="{{ user.profile.image.url }}" class="rounded-circle border responsive"
+						                        alt="..." height="50" width="50"></span>
 						<span class="mr-4 ml-2 mt-4"><i class=" feather-18" data-feather="align-right"></i></span>
 					</button>
 					<div class="dropdown-content font-weight-bold log">
 						<a href="{% url 'profile' %}" class="hvr-bubble-float-bottom p-3 mt-4 border-bottom">Profile</a>
 						<a href="#" class="hvr-bubble-float-bottom p-3 mt-3 border-bottom">Activity</a>
-						<a href="/logout" class="hvr-bubble-float-bottom p-3 mt-3 border-bottom text-muted d-flex log text-danger"><span class="mr-4 pr-3">Log
+						<a href="/logout"
+						   class="hvr-bubble-float-bottom p-3 mt-3 border-bottom text-muted d-flex log text-danger"><span
+										class="mr-4 pr-3">Log
 							Out </span><i
-											class="feather-16 ml-5"
-											data-feather="log-out"></i></a>
+										class="feather-16 ml-5"
+										data-feather="log-out"></i></a>
 					</div>
 				</div>
 			</li>
@@ -55,7 +58,7 @@ example 3 - Navbar with brand left, links on center and right that collapse into
 			{% endif %}
 
 			<li class="nav-item submit-color">
-				<a class="nav-link nav-font text-white font-weight-bold py-3 my-3 px-5" href="#">SUBMIT YOUR SITE !</a>
+				<a class="nav-link nav-font text-white font-weight-bold py-3 my-3 px-5" href="{% url 'new_post' %}">SUBMIT YOUR SITE !</a>
 			</li>
 		</ul>
 	</div>
