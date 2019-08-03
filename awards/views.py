@@ -12,7 +12,7 @@ def index(request):
 
 @login_required(login_url='/accounts/login/')
 def profile(request):
-    profiles = Profile.objects.all()
+    posts = Post.objects.all().order_by('-post_date')
     return render(request, 'profile.html', locals())
 
 
@@ -61,5 +61,5 @@ def user(request, user_id):
     user_object = get_object_or_404(User, pk=user_id)
     if request.user == user_object:
         return redirect('profile')
-    user_images = user_object.posts.all()
+    user_projects = user_object.posts.all()
     return render(request, 'user.html', locals())

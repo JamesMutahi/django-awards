@@ -9,7 +9,7 @@
 	<div class="container">
 		<div class="profile-layout text-center">
 			<div>
-				<img src="{{ user.profile.image.url }}" class="rounded-circle border responsive hvr-float-shadow " alt="..."
+				<img src="{{ user.profile.image.url }}" class="rounded-circle border responsive hvr-grow" alt="..."
 				     height="120"
 				     width="120">
 			</div>
@@ -27,5 +27,30 @@
 			<span class="text-muted">Last modified: {{ user.profile.updated_at }}</span>
 		</div>
 	</div>
+</div>
+<div class="container mt-5">
+	<h1 class="text-center">PROJECTS</h1>
+	<hr style="width: 80px">
+	{% for project in posts %}
+	{% if project.user == user.profile.user %}
+	<div class="row mt-5 hvr-grow ">
+		<div class="col-md-3">
+			<img src="{{ project.image1.url }}" class="img-thumbnail" width="500">
+		</div>
+		<div class="col-md-9">
+			<p>Project Name: {{ project.sitename }}</p>
+			<p>Description: {{ project.desc }}</p>
+			<p>Technologies: {{ project.technologies }}</p>
+			<p>Categories: {{ project.categories }}</p>
+			<p class=""><a href="{{ project.link }}">
+				<button class="btn hvr-bubble-float-bottom">LINK</button>
+			</a></p>
+			<p class="text-muted float-right">{{ project.post_date }}</p>
+		</div>
+	</div>
+	<hr>
+	{% endif %}
+	{% endfor %}
+
 </div>
 {% endblock %}
