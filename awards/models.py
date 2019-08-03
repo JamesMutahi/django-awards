@@ -63,7 +63,7 @@ class Rating(models.Model):
         (9, '9'),
         (10, '10')
     )
-    project = models.ForeignKey(Project)
+    post = models.ForeignKey(Post)
     pub_date = models.DateTimeField(auto_now=True)
     user = models.ForeignKey(User)
     usability_rating = models.IntegerField(default=0, choices=RATINGS, null=True)
