@@ -18,3 +18,9 @@ class NewPostForm(forms.ModelForm):
         widgets = {
             'tags': forms.CheckboxSelectMultiple(),
         }
+
+
+class ProjectRatingForm(forms.ModelForm):
+    class Meta:
+        model = Rating
+        exclude = ['project', 'pub_date', 'user']
