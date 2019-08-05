@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     'awards',
     'bootstrap4',
     'mathfilters',
+    'rest_framework',
 ]
 
 MIDDLEWARE = [
@@ -79,7 +80,7 @@ WSGI_APPLICATION = 'projo.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/2.2/ref/settings/#databases
-#
+
 # if config('MODE') == "dev":
 #     DATABASES = {
 #         'default': {
@@ -93,7 +94,7 @@ WSGI_APPLICATION = 'projo.wsgi.application'
 #
 #     }
 # # production
-# else:
+else:
 DATABASES = {
     'default': dj_database_url.config(
         default=config('DATABASE_URL')
