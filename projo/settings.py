@@ -94,7 +94,7 @@ WSGI_APPLICATION = 'projo.wsgi.application'
 #
 #     }
 # # production
-else:
+# else:
 DATABASES = {
     'default': dj_database_url.config(
         default=config('DATABASE_URL')
