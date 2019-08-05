@@ -35,7 +35,7 @@
 	{% if project.user == user.profile.user %}
 	<div class="row mt-5 hvr-grow ">
 		<div class="col-md-3">
-			<a href="{% url 'project' post.id %}"><img src="{{ project.image1.url }}" class="img-thumbnail" width="500">
+			<img src="{{ project.image1.url }}" class="img-thumbnail" width="500">
 		</div>
 		<div class="col-md-9">
 			<p>Project Name: {{ project.sitename }}</p>
