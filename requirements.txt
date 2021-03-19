@@ -14,7 +14,7 @@ django-secretballot==1.0.0
 django-threadedcomments==1.2
 django-tinymce==2.8.0
 django-utils==0.0.2
-djangorestframework==3.10.2
+djangorestframework==3.11.2
 gunicorn==19.9.0
 Pillow==6.2.0
 psycopg2==2.8.3
