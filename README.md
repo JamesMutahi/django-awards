@@ -1,4 +1,4 @@
-# Instagram Clone
+# Rate A Peer
 #### This is a Django Web Application where you can post and/or view different projects and rate them according to design,usability and content, 26/07/2019
 
 
